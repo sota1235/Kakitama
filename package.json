@@ -18,5 +18,9 @@
     "electron-prebuilt": "^0.37.7",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2"
+  },
+  "dependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   }
 }
