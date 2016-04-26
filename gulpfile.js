@@ -37,7 +37,8 @@ gulp.task('es6', () => {
       babel({
         presets: ['es2015', 'react'],
         plugins: [
-          'transform-react-display-name'
+          'transform-react-display-name',
+          'transform-object-assign'
         ],
       })
     )
