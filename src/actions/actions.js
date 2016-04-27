@@ -18,7 +18,7 @@ export function addTodo(text) {
  * @param {number} index
  * @return {Object}
  */
-export function completeTod(index) {
+export function completeTodo(index) {
   return { type: ActionNames.COMPLETE_TODO, index };
 }
 
@@ -27,6 +27,6 @@ export function completeTod(index) {
  * @param {string} filter
  * @return {Object}
  */
-export function setVisibiltyFilter(filter) {
+export function setVisibilityFilter(filter) {
   return { type: ActionNames.SET_VISIBILITY_FILTER, filter };
 }
