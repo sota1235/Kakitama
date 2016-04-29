@@ -24,7 +24,7 @@ let AddTodo = ({ dispatch }) => {
         }} />
         <button type="submit">
           Add Todo
-        </buttton>
+        </button>
       </form>
     </div>
   );

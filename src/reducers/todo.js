@@ -28,6 +28,7 @@ const todo = (state, action) => {
       });
     default:
       return state;
+  }
 };
 
 /**
@@ -41,12 +42,10 @@ const todos = (state = [], action) => {
     case ActionNames.ADD_TODO:
       return [
         ...state,
-        todo(undefined, action);
+        todo(undefined, action)
       ];
     case ActionNames.TOGGLE_ID:
-      return state.map(todo => {
-        return todo(t, action);
-      });
+      return state.map(t => todo(t, action));
     default:
       return state;
   }

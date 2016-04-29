@@ -5,7 +5,7 @@
 import React, { PropTypes } from 'react';
 import Todo from './todo-component';
 
-const TodoList = ({ todo, onTodoClick }) => (
+const TodoList = ({ todos, onTodoClick }) => (
   <ul>
     {todos.map( todo =>
       <Todo
@@ -13,6 +13,7 @@ const TodoList = ({ todo, onTodoClick }) => (
         {...todo}
         onClick={() => onTodoClick(todo.id)}
       />
+    )}
   </ul>
 );
 

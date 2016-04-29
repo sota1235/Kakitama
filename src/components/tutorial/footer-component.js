@@ -8,7 +8,7 @@ import { VisibilityFilters } from '../../constants';
 
 const { SHOW_ALL, SHOW_ACTIVE, SHOW_COMPLETED } = VisibilityFilters;
 
-const Footer = () => {
+const Footer = () => (
   <p>
     Show:
     {" "}
@@ -18,6 +18,6 @@ const Footer = () => {
     {", "}
     <FilterLink filter={ SHOW_COMPLETED }>Completed</FilterLink>
   </p>
-};
+);
 
 export default Footer;

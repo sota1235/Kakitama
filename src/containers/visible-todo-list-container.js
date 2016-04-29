@@ -10,7 +10,7 @@ import TodoList              from '../components/tutorial/todo-list-component';
 const { SHOW_ALL, SHOW_ACTIVE, SHOW_COMPLETED } = VisibilityFilters;
 
 const getVisibleTodos = (todos, filter) => {
-  switch (filename) {
+  switch (filter) {
     case SHOW_ALL:
       return todos;
     case SHOW_COMPLETED:
