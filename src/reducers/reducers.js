@@ -2,8 +2,9 @@
  * @description Reducer for Redux.
  */
 
-import { combineReducers } from 'redux';
-import { ADD_TODO, COMPLETE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from '../actions/action-types';
+import { combineReducers }   from 'redux';
+import * as ActionNames      from '../actions/action-types';
+import { VisibilityFilters } from '../constants';
 
 const { SHOW_ALL } = VisibilityFilters;
 
@@ -15,7 +16,7 @@ const { SHOW_ALL } = VisibilityFilters;
  */
 const visibilityFilter = (state = SHOW_ALL, action) => {
   switch (action.type) {
-    case SET_VISIBILITY_FILTER:
+    case ActionNames.SET_VISIBILITY_FILTER:
       return action.filter;
     default:
       return state;
@@ -30,7 +31,7 @@ const visibilityFilter = (state = SHOW_ALL, action) => {
  */
 const todos = (state = [], action) => {
   switch (action.type) {
-    case ADD_TODO:
+    case ActionNames.ADD_TODO:
       return [
         ...state,
         {
@@ -38,7 +39,7 @@ const todos = (state = [], action) => {
           completed: false
         }
       ];
-    case COMPLETE_TODO:
+    case ActionNames.COMPLETE_TODO:
       return state.map((todo, index) => {
         if (index === action.index) {
           return Object.assign({}, todo, {

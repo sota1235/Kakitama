@@ -15,17 +15,13 @@ export const ADD_TODO = 'ADD_TODO';
 export const COMPLETE_TODO = 'COMPLETE_TOD';
 
 /**
+ * @description Toggle todo.
+ * @type {string}
+ */
+export const TOGGLE_TODO = 'TOGGLE_TODO';
+
+/**
  * @description Visible todo.
  * @type {string}
  */
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
-
-/**
- * @description Constants for visibility status.
- * @type {Object}
- */
-export const VisibilityFilters = {
-  SHOW_ALL       : 'SHOW_ALL',
-  SHOW_COMPLETED : 'SHOW_COMPLETED',
-  SHOW_ACTIVE    : 'SHOW_ACTIVE'
-}
