@@ -4,6 +4,7 @@
   "description": "Simple music player.",
   "main": "app/main.js",
   "scripts": {
+    "start": "electron app/main.js",
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
