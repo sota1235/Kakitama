@@ -15,8 +15,8 @@ let nextTodoId = 0;
 export function addTodo(text) {
   return {
     type: ActionNames.ADD_TODO,
-    id  : nextTodoId++,
-    text
+    id: nextTodoId++,
+    text,
   };
 }
 
@@ -43,6 +43,5 @@ export function setVisibilityFilter(filter) {
  * @param {number} id
  * @return {Object}
  */
-export const toggleTodo = (id) => {
-  return { type: ActionNames.TOGGLE_TODO, id };
-}
+export const toggleTodo = (id) => ({ type: ActionNames.TOGGLE_TODO, id });
+
