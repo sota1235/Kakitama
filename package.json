@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron app/main.js",
     "build": "gulp build",
+    "lint": "eslint -c airbnb src/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,11 @@
     "babel-preset-react": "^6.5.0",
     "del": "^2.2.0",
     "electron-prebuilt": "^0.37.7",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "run-sequence": "^1.1.5"
