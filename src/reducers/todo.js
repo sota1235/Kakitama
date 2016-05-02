@@ -2,7 +2,7 @@
  * @description Reducer for changing todo state.
  */
 
-import * as ActionNames      from '../actions/action-types';
+import * as ActionNames from '../actions/action-types';
 
 /**
  * @description Change state for todo.
@@ -14,9 +14,9 @@ const todo = (state, action) => {
   switch (action.type) {
     case ActionNames.ADD_TODO:
       return {
-        id       : action.id,
-        text     : action.text,
-        completed: false
+        id: action.id,
+        text: action.text,
+        completed: false,
       };
     case ActionNames.TOGGLE_ID:
       if (state.id !== action.id) {
@@ -24,7 +24,7 @@ const todo = (state, action) => {
       }
 
       return Object.assign({}, state, {
-        completed: !state.completed
+        completed: !state.completed,
       });
     default:
       return state;
@@ -42,7 +42,7 @@ const todos = (state = [], action) => {
     case ActionNames.ADD_TODO:
       return [
         ...state,
-        todo(undefined, action)
+        todo(undefined, action),
       ];
     case ActionNames.TOGGLE_ID:
       return state.map(t => todo(t, action));

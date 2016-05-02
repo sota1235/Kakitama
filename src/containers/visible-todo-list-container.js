@@ -2,10 +2,10 @@
  * @description Container for visibility for todo list.
  */
 
-import { connect }           from 'react-redux';
+import { connect } from 'react-redux';
 import { VisibilityFilters } from '../constants';
-import { completeTodo }      from '../actions/actions';
-import TodoList              from '../components/tutorial/todo-list-component';
+import { completeTodo } from '../actions/actions';
+import TodoList from '../components/tutorial/todo-list-component';
 
 const { SHOW_ALL, SHOW_ACTIVE, SHOW_COMPLETED } = VisibilityFilters;
 
@@ -14,25 +14,25 @@ const getVisibleTodos = (todos, filter) => {
     case SHOW_ALL:
       return todos;
     case SHOW_COMPLETED:
-      return todos.filter( t => t.completed);
+      return todos.filter(t => t.completed);
     case SHOW_ACTIVE:
-      return todos.filter( t => !t.completed);
+      return todos.filter(t => !t.completed);
+    default:
+      return todos;
   }
 };
 
-const mapStateToProps = (state) => {
-  return {
-    todos: getVisibleTodos(state.todos, state.visibilityFilter)
-  };
-};
+const mapStateToProps = (state) => (
+  { todos: getVisibleTodos(state.todos, state.visibilityFilter) }
+);
 
-const mapDispatchToProps = (dispatch) => {
-  return {
+const mapDispatchToProps = (dispatch) => (
+  {
     onTodoClick: (id) => {
-      dispatch(completeTodo(id))
-    }
+      dispatch(completeTodo(id));
+    },
   }
-};
+);
 
 const VisibleTodoList = connect(
   mapStateToProps,
