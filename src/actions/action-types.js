@@ -12,7 +12,7 @@ export const ADD_TODO = 'ADD_TODO';
  * @description Complete todo.
  * @type {string}
  */
-export const COMPLETE_TODO = 'COMPLETE_TOD';
+export const COMPLETE_TODO = 'COMPLETE_TODO';
 
 /**
  * @description Toggle todo.
