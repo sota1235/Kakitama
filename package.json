@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron app/main.js",
     "build": "gulp build",
-    "lint": "eslint -c airbnb src/*",
+    "lint": "eslint -c airbnb src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
