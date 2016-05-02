@@ -11,7 +11,6 @@ import * as ActionNames from '../actions/action-types';
  * @return {Object} state
  */
 const todo = (state, action) => {
-  console.log(state, action);
   switch (action.type) {
     case ActionNames.ADD_TODO:
       return {

@@ -26,7 +26,7 @@ export function addTodo(text) {
  * @return {Object}
  */
 export function completeTodo(id) {
-  return { type: ActionNames.COMPLETE_TODO, id};
+  return { type: ActionNames.COMPLETE_TODO, id };
 }
 
 /**
