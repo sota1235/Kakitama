@@ -3,8 +3,9 @@
  */
 
 import { VisibilityFilters } from '../constants';
+import { SET_VISIBILITY_FILTER } from '../actions/action-types';
 
-const { SHOW_ALL, SET_VISIBILITY_FILTER } = VisibilityFilters;
+const { SHOW_ALL } = VisibilityFilters;
 
 /**
  * @description Get state for visibility of todo list.
