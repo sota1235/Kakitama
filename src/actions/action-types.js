@@ -15,12 +15,6 @@ export const ADD_TODO = 'ADD_TODO';
 export const COMPLETE_TODO = 'COMPLETE_TODO';
 
 /**
- * @description Toggle todo.
- * @type {string}
- */
-export const TOGGLE_TODO = 'TOGGLE_TODO';
-
-/**
  * @description Visible todo.
  * @type {string}
  */

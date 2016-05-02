@@ -11,6 +11,7 @@ import * as ActionNames from '../actions/action-types';
  * @return {Object} state
  */
 const todo = (state, action) => {
+  console.log(state, action);
   switch (action.type) {
     case ActionNames.ADD_TODO:
       return {
@@ -18,7 +19,7 @@ const todo = (state, action) => {
         text: action.text,
         completed: false,
       };
-    case ActionNames.TOGGLE_ID:
+    case ActionNames.COMPLETE_TODO:
       if (state.id !== action.id) {
         return state;
       }
@@ -44,7 +45,7 @@ const todos = (state = [], action) => {
         ...state,
         todo(undefined, action),
       ];
-    case ActionNames.TOGGLE_ID:
+    case ActionNames.COMPLETE_TODO:
       return state.map(t => todo(t, action));
     default:
       return state;

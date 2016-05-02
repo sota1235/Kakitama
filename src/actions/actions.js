@@ -25,8 +25,8 @@ export function addTodo(text) {
  * @param {number} index
  * @return {Object}
  */
-export function completeTodo(index) {
-  return { type: ActionNames.COMPLETE_TODO, index };
+export function completeTodo(id) {
+  return { type: ActionNames.COMPLETE_TODO, id};
 }
 
 /**
@@ -37,11 +37,3 @@ export function completeTodo(index) {
 export function setVisibilityFilter(filter) {
   return { type: ActionNames.SET_VISIBILITY_FILTER, filter };
 }
-
-/**
- * @description Toggle todo status.
- * @param {number} id
- * @return {Object}
- */
-export const toggleTodo = (id) => ({ type: ActionNames.TOGGLE_TODO, id });
-
