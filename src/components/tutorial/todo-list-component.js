@@ -4,9 +4,10 @@
 
 import React, { PropTypes } from 'react';
 import Todo from './todo-component';
+import { List } from 'material-ui';
 
 const TodoList = ({ todos, onTodoClick }) => (
-  <ul>
+  <List>
     {todos.map(todo =>
       <Todo
         key={todo.id}
@@ -14,7 +15,7 @@ const TodoList = ({ todos, onTodoClick }) => (
         onClick={() => onTodoClick(todo.id)}
       />
     )}
-  </ul>
+  </List>
 );
 
 TodoList.propTypes = {
