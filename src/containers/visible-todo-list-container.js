@@ -5,7 +5,7 @@
 import { connect } from 'react-redux';
 import { VisibilityFilters } from '../constants';
 import { completeTodo } from '../actions/actions';
-import TodoList from '../components/tutorial/todo-list-component';
+import TodoList from '../components/todo-list-component';
 
 const { SHOW_ALL, SHOW_ACTIVE, SHOW_COMPLETED } = VisibilityFilters;
 

@@ -1,14 +1,18 @@
 /**
- * @description Main component.
+ * @description Root component.
  */
-import React from 'react';
-import PlayerComponent from './player-component';
 
-const AppComponent = () => (
-  <div className="app">
-    <p>Hello, Kakitama!</p>
-    <PlayerComponent />
+import React from 'react';
+import Footer from './footer-component';
+import AddTodo from '../containers/add-todo-container';
+import VisibleTodoList from '../containers/visible-todo-list-container';
+
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
   </div>
 );
 
-export default AppComponent;
+export default App;

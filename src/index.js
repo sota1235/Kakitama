@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import todoApp from './reducers/index';
-import App from './components/tutorial/app-component';
+import App from './components/app-component';
 
 let store = createStore(todoApp);
 
