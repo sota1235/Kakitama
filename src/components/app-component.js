@@ -3,15 +3,13 @@
  */
 
 import React from 'react';
-import Footer from './footer-component';
-import AddTodo from '../containers/add-todo-container';
-import VisibleTodoList from '../containers/visible-todo-list-container';
+import LeftNavBar from './letf-nav-component';
+import RightDisplay from './right-display-component';
 
 const App = () => (
   <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
+    <LeftNavBar />
+    <RightDisplay />
   </div>
 );
 
