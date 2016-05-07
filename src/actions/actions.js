@@ -21,3 +21,16 @@ export function addMusic(songName, albumName, artistName) {
     songName, albumName, artistName,
   };
 }
+
+/**
+ * @description Dispatch adding music action.
+ * @param {Array} file
+ * @return {Object}
+ */
+export function uploadMusics(files) {
+  return {
+    type: ActionNames.UPLOAD_MUSIC,
+    id: nextMusicId++,
+    files,
+  };
+}
