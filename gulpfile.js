@@ -35,7 +35,7 @@ gulp.task('es6', () => {
     .src('src/**/*.js')
      .pipe(
       babel({
-        presets: ['es2015', 'react', 'stage-3'],
+        presets: ['es2015', 'react', 'stage-3', 'stage-0'],
         plugins: [
           'transform-react-display-name',
           'transform-object-assign'
