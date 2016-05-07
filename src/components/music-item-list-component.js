@@ -8,14 +8,14 @@ import MusicItem from './music-item-component';
 
 const MusicItemList = ({ songs }) => (
   <Table>
-    <TableHeader>
+    <TableHeader displaySelectAll={false}>
       <TableRow>
         <TableHeaderColumn>曲名</TableHeaderColumn>
         <TableHeaderColumn>アルバム</TableHeaderColumn>
         <TableHeaderColumn>歌手名</TableHeaderColumn>
       </TableRow>
     </TableHeader>
-    <TableBody>
+    <TableBody displayRowCheckbox={false}>
       {songs.map(song =>
         <MusicItem
           key={song.id}
