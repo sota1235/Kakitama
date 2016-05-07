@@ -3,19 +3,7 @@
  */
 
 /**
- * @description Adding todo.
+ * @description Add music.
  * @type {string}
  */
-export const ADD_TODO = 'ADD_TODO';
-
-/**
- * @description Complete todo.
- * @type {string}
- */
-export const COMPLETE_TODO = 'COMPLETE_TODO';
-
-/**
- * @description Visible todo.
- * @type {string}
- */
-export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
+export const ADD_MUSIC = 'ADD_MUSIC';

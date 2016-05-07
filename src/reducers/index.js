@@ -3,11 +3,8 @@
  */
 
 import { combineReducers } from 'redux';
-import todos from './todo';
-import visibilityFilter from './visibility-filter';
+import musics from './music';
 
-const todoApp = combineReducers({
-  todos, visibilityFilter,
-});
+const musicApp = combineReducers({ musics });
 
-export default todoApp;
+export default musicApp;

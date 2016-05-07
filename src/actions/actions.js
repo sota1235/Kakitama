@@ -5,35 +5,19 @@
 import * as ActionNames from './action-types';
 
 /** @type {number} auto increment number for todo list. */
-let nextTodoId = 0;
+let nextMusicId = 0;
 
 /**
- * @description Dispatch adding TODO action.
- * @param {string} text
+ * @description Dispatch adding music action.
+ * @param {string} songName
+ * @param {string} albumName
+ * @param {string} artistName
  * @return {Object}
  */
-export function addTodo(text) {
+export function addMusic(songName, albumName, artistName) {
   return {
-    type: ActionNames.ADD_TODO,
-    id: nextTodoId++,
-    text,
+    type: ActionNames.ADD_MUSIC,
+    id: nextMusicId++,
+    songName, albumName, artistName,
   };
-}
-
-/**
- * @description Dispatch completing TODO action.
- * @param {number} index
- * @return {Object}
- */
-export function completeTodo(id) {
-  return { type: ActionNames.COMPLETE_TODO, id };
-}
-
-/**
- * @description Dispatch setting visibility status action.
- * @param {string} filter
- * @return {Object}
- */
-export function setVisibilityFilter(filter) {
-  return { type: ActionNames.SET_VISIBILITY_FILTER, filter };
 }
