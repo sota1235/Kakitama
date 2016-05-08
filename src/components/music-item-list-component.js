@@ -28,7 +28,7 @@ const MusicItemList = ({ songs }) => (
 
 MusicItemList.propTypes = {
   songs: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     songName: PropTypes.string,
     albumName: PropTypes.string,
     artistName: PropTypes.string,

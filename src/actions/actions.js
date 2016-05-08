@@ -3,9 +3,7 @@
  */
 
 import * as ActionNames from './action-types';
-
-/** @type {number} auto increment number for todo list. */
-let nextMusicId = 0;
+import sha256 from 'sha256';
 
 /**
  * @description Dispatch adding music action.
@@ -15,9 +13,11 @@ let nextMusicId = 0;
  * @return {Object}
  */
 export function addMusic(songName, albumName, artistName) {
+  let id = sha256(`${songName}${albumName}${artistName}`);
+  console.log(id);
   return {
     type: ActionNames.ADD_MUSIC,
-    id: nextMusicId++,
+    id: sha256(`${songName}${albumName}${artistName}`),
     songName, albumName, artistName,
   };
 }
