@@ -9,9 +9,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import musicApp from './reducers/index';
 import App from './components/app-component';
-import * as middlewares from './middleware/index';
+import middlewares from './middleware/';
 
-let store = createStore(musicApp, applyMiddleware(...middlewares));
+const store = createStore(musicApp, applyMiddleware(...middlewares));
 
 render(
   <MuiThemeProvider muiTheme={getMuiTheme()}>
