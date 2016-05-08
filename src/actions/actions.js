@@ -30,7 +30,6 @@ export function addMusic(songName, albumName, artistName) {
 export function uploadMusics(files) {
   return {
     type: ActionNames.UPLOAD_MUSIC,
-    id: nextMusicId++,
     files,
   };
 }
