@@ -7,8 +7,10 @@ import { Drawer, MenuItem } from 'material-ui';
 
 const LeftNavBar = () => (
   <Drawer open={true} docked={true}>
-    <MenuItem>ほげ</MenuItem>
-    <MenuItem>もげ</MenuItem>
+    <MenuItem>All</MenuItem>
+    <MenuItem>Artist</MenuItem>
+    <MenuItem>Album</MenuItem>
+    <MenuItem>Label</MenuItem>
   </Drawer>
 );
 
