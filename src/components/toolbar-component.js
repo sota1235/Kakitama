@@ -4,6 +4,7 @@
 
 import React from 'react';
 import { Toolbar, ToolbarGroup, ToolbarTitle, FontIcon } from 'material-ui';
+import PlayStatus from './play-status-component';
 
 const CommonToolbar = () => (
   <Toolbar>
@@ -13,7 +14,7 @@ const CommonToolbar = () => (
       <FontIcon className="material-icons">fast_forward</FontIcon>
     </ToolbarGroup>
     <ToolbarGroup>
-      <p>再生ステータスここに表示する</p>
+      <PlayStatus />
     </ToolbarGroup>
     <ToolbarGroup>
       <ToolbarTitle text="Main tool bar" />
