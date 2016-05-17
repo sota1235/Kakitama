@@ -14,12 +14,13 @@ gulp.task('clean', () => {
 // export node_modules files
 gulp.task('export-node-modules', () => {
   const exportModules = [
-    'font-awesome'
+    'font-awesome',
+    'material-design-icons',
   ];
 
   for(let exportModule of exportModules) {
     gulp.src(`node_modules/${exportModule}/**/*`)
-      .pipe(gulp.dest('app/node_modules'));
+      .pipe(gulp.dest(`app/node_modules/${exportModule}`));
   }
 });
 
@@ -32,7 +33,7 @@ gulp.task('export-html', () => {
 
 // compile stylus
 gulp.task('stylus', () => {
-  gulp.src('src/css/*')
+  return gulp.src('src/css/*')
     .pipe(stylus())
     .pipe(gulp.dest('app/css/'));
 });
