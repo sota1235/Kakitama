@@ -2,6 +2,7 @@
 
 const gulp        = require('gulp');
 const babel       = require('gulp-babel');
+const stylus      = require('gulp-stylus');
 const del         = require('del');
 const runSequence = require('run-sequence');
 
@@ -29,6 +30,13 @@ gulp.task('export-html', () => {
     .pipe(gulp.dest('app'));
 });
 
+// compile stylus
+gulp.task('stylus', () => {
+  gulp.src('src/css/*')
+    .pipe(stylus())
+    .pipe(gulp.dest('app/css/'));
+});
+
 // compile js written in ES2015
 gulp.task('es6', () => {
   return gulp
@@ -47,5 +55,5 @@ gulp.task('es6', () => {
 
 // default build task
 gulp.task('build', (cb) => {
-  return runSequence('clean', 'es6', 'export-html', 'export-node-modules', cb);
+  return runSequence('clean', 'es6', 'stylus', 'export-html', 'export-node-modules', cb);
 });

@@ -30,12 +30,14 @@
     "eslint-plugin-react": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-stylus": "^2.3.1",
     "run-sequence": "^1.1.5"
   },
   "dependencies": {
     "font-awesome": "^4.6.1",
     "material-ui": "^0.15.0-beta.2",
     "musicmetadata": "^2.0.2",
+    "nedb": "^1.8.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-dropzone": "^3.4.0",
