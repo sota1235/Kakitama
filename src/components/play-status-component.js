@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { List, ListItem, Avatar, FontIcon } from 'material-ui';
+import { ListItem, Avatar, FontIcon } from 'material-ui';
 
 const PlayStatus = () => (
   <div>

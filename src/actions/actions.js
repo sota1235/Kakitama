@@ -14,11 +14,10 @@ import sha256 from 'sha256';
  * @return {Object}
  */
 export function addMusic(songName, albumName, artistName, filePath) {
-  let id = sha256(`${songName}${albumName}${artistName}${filePath}`);
+  const id = sha256(`${songName}${albumName}${artistName}${filePath}`);
   return {
     type: ActionNames.ADD_MUSIC,
-    id: sha256(`${songName}${albumName}${artistName}`),
-    songName, albumName, artistName, filePath,
+    id, songName, albumName, artistName, filePath,
   };
 }
 

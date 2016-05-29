@@ -2,7 +2,7 @@
  * @description Music item component.
  */
 
-import React, { PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import { Table, TableRow, TableHeader, TableHeaderColumn, TableBody } from 'material-ui';
 import MusicItem from './music-item-component';
 

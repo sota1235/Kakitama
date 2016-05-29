@@ -1,5 +1,6 @@
 {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "rules": {
     "no-multi-spaces": [
       "error",
@@ -10,6 +11,7 @@
         }
       }
     ],
-    "no-console": ["off"]
+    "no-console": ["off"],
+    "react/jsx-boolean-value": ["off"]
   }
 }

@@ -18,7 +18,7 @@ const musicItemDisplay = (state = [], action) => {
       };
     default:
       return state;
-  };
+  }
 };
 
 export default musicItemDisplay;
