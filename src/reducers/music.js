@@ -18,6 +18,7 @@ const music = (state, action) => {
         songName: action.songName,
         albumName: action.albumName,
         artistName: action.artistName,
+        filePath: action.filePath,
       };
     default:
       return state;

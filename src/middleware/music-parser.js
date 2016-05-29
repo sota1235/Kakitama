@@ -12,8 +12,8 @@ const musicParser = store => next => async action => {
     const uploadFiles = action.files;
     const parsedFiles = await parseMusics(uploadFiles);
     for (const index in parsedFiles) {
-      let { songName, albumName, artistName } = parsedFiles[index];
-      store.dispatch(addMusic(songName, albumName, artistName));
+      let { songName, albumName, artistName, filePath } = parsedFiles[index];
+      store.dispatch(addMusic(songName, albumName, artistName, filePath));
     }
   }
 

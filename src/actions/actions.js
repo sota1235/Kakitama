@@ -10,15 +10,15 @@ import sha256 from 'sha256';
  * @param {string} songName
  * @param {string} albumName
  * @param {string} artistName
+ * @param {string} filePath
  * @return {Object}
  */
-export function addMusic(songName, albumName, artistName) {
-  let id = sha256(`${songName}${albumName}${artistName}`);
-  console.log(id);
+export function addMusic(songName, albumName, artistName, filePath) {
+  let id = sha256(`${songName}${albumName}${artistName}${filePath}`);
   return {
     type: ActionNames.ADD_MUSIC,
     id: sha256(`${songName}${albumName}${artistName}`),
-    songName, albumName, artistName,
+    songName, albumName, artistName, filePath,
   };
 }
 
