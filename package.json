@@ -6,6 +6,7 @@
   "scripts": {
     "start": "electron app/main.js",
     "build": "gulp build",
+    "watch": "babel src --out-dir app --watch --source-maps-inline",
     "lint": "eslint -c airbnb src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
     "babel-plugin-transform-object-assign": "^6.5.0",
     "babel-plugin-transform-react-display-name": "^6.5.0",
     "babel-polyfill": "^6.8.0",
