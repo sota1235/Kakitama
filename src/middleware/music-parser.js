@@ -2,6 +2,7 @@
  * @description Logs all actions and states after they are dispatched.
  */
 
+import 'babel-polyfill';
 import * as ActionNames from '../actions/action-types';
 import { addMusic } from '../actions/actions';
 import parseMusics from '../services/parse-music-file';
