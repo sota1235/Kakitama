@@ -14,6 +14,7 @@ const musicPlayer = store => next => async action => {
     const targetId   = action.id;
     const targetPath = find(store.getState().musics, { id: targetId }).filePath;
 
+    audio.stop();
     audio.play(targetPath);
   }
 
