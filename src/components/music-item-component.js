@@ -5,8 +5,8 @@
 import React, { PropTypes } from 'react';
 import { TableRow, TableRowColumn } from 'material-ui';
 
-const MusicItem = ({ songName, albumName, artistName }) => (
-  <TableRow>
+const MusicItem = ({ songName, albumName, artistName, onClick }) => (
+  <TableRow onClick={onClick}>
     <TableRowColumn>{songName}</TableRowColumn>
     <TableRowColumn>{albumName}</TableRowColumn>
     <TableRowColumn>{artistName}</TableRowColumn>

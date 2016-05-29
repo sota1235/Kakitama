@@ -4,7 +4,7 @@
 
 import React, { PropTypes } from 'react';
 import { Table, TableRow, TableHeader, TableHeaderColumn, TableBody } from 'material-ui';
-import MusicItem from './music-item-component';
+import MusicItem from '../containers/music-item-container';
 
 const MusicItemList = ({ songs }) => (
   <Table>
@@ -28,10 +28,10 @@ const MusicItemList = ({ songs }) => (
 
 MusicItemList.propTypes = {
   songs: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    songName: PropTypes.string,
-    albumName: PropTypes.string,
-    artistName: PropTypes.string,
+    id         : PropTypes.string.isRequired,
+    songName   : PropTypes.string,
+    albumName  : PropTypes.string,
+    artistName : PropTypes.string,
   }).isRequired).isRequired,
 };
 
