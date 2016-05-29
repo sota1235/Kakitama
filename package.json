@@ -7,7 +7,7 @@
     "start": "electron app/main.js",
     "build": "gulp build",
     "watch": "babel src --out-dir app --watch --source-maps-inline",
-    "lint": "eslint -c airbnb src/**/*.js",
+    "lint": "eslint src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
