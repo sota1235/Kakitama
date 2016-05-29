@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import LeftNavBar from './letf-nav-component';
+import LeftNavBar from './left-nav-component';
 import RightDisplay from './right-display-component';
 
 const App = () => (
