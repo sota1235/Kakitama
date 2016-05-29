@@ -13,3 +13,9 @@ export const ADD_MUSIC = 'ADD_MUSIC';
  * @type {string}
  */
 export const UPLOAD_MUSIC = 'UPLOAD_MUSIC';
+
+/**
+ * @description Click music item.
+ * @type {string}
+ */
+export const CLICK_MUSIC_ITEM = 'CLICK_MUSIC_ITEM';
