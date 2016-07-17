@@ -5,7 +5,7 @@
 import React from 'react';
 import { ListItem, Avatar, FontIcon } from 'material-ui';
 
-const PlayStatus = () => (
+const PlayStatus = ({ songName }) => (
   <div>
     <ListItem
       disable={true}
@@ -14,7 +14,7 @@ const PlayStatus = () => (
       }
       size="20"
     >
-      Song Name
+      {songName ? songName : ''}
     </ListItem>
   </div>
 );
