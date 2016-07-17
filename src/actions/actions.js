@@ -45,3 +45,33 @@ export function enableMusicItem(id, songName) {
     id, songName,
   };
 }
+
+/**
+ * @description Dispatch starting music action.
+ * @return {Object}
+ */
+export function playMusic() {
+  return {
+    type: ActionNames.START_PLAYING_MUSIC,
+  };
+}
+
+/**
+ * @description Dispatch changing to prev music.
+ * @return {Object}
+ */
+export function prevMusic() {
+  return {
+    type: ActionNames.PREV_MUSIC,
+  };
+}
+
+/**
+ * @description Dispatch changing to next music.
+ * @return {Object}
+ */
+export function nextMusic() {
+  return {
+    type: ActionNames.NEXT_MUSIC,
+  };
+}

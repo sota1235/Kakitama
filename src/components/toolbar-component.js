@@ -5,7 +5,7 @@
 import React from 'react';
 import { Toolbar, ToolbarGroup, ToolbarTitle, FontIcon } from 'material-ui';
 import PlayStatus  from '../containers/play-status-container';
-import PlayButtons from './play-buttons-component';
+import PlayButtons from '../containers/play-buttons-container';
 
 const CommonToolbar = () => (
   <Toolbar>
