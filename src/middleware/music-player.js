@@ -1,5 +1,5 @@
 /**
- * @description Logs all actions and states after they are dispatched.
+ * @description Play music when some action dispatched.
  */
 
 import 'babel-polyfill';
