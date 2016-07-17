@@ -1,6 +1,8 @@
 Kakitama
 ====
 
+[![Build Status](https://travis-ci.org/sota1235/Kakitama.svg?branch=master)](https://travis-ci.org/sota1235/Kakitama)
+
 Simple music player.
 
 ### Description
