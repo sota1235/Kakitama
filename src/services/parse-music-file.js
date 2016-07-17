@@ -18,10 +18,10 @@ const getMusicMetaData = fileName =>
         reject(err);
       }
       resolve({
-        songName: metadata.title,
-        albumName: metadata.album,
-        artistName: metadata.artist[0],
-        filePath: fileName,
+        songName   : metadata.title,
+        albumName  : metadata.album,
+        artistName : metadata.artist[0],
+        filePath   : fileName,
       });
     });
   });

@@ -14,7 +14,7 @@ const PlayStatus = ({ songName }) => (
       }
       size="20"
     >
-      {songName ? songName : ''}
+      {songName || ''}
     </ListItem>
   </div>
 );

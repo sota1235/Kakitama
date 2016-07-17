@@ -25,10 +25,10 @@ export default class AudioPlayer {
    * @return {Promise}
    * @private
    */
-  async _getArrayBuffer(filePath) {
+  async getArrayBuffer(filePath) {
     try {
       const data = await readFile(filePath);
-      return await this._decodeAudioData(toArrayBuffer(data));
+      return await this.decodeAudioData(toArrayBuffer(data));
     } catch (e) {
       return null;
     }
@@ -39,7 +39,7 @@ export default class AudioPlayer {
    * @param {ArrayBuffer} buffer
    * @return {Promise}
    */
-  async _decodeAudioData(buffer) {
+  async decodeAudioData(buffer) {
     return await this.context.decodeAudioData(buffer);
   }
 
@@ -49,7 +49,7 @@ export default class AudioPlayer {
    */
   async play(musicFilePath) {
     this.source = this.context.createBufferSource();
-    this.source.buffer = await this._getArrayBuffer(musicFilePath);
+    this.source.buffer = await this.getArrayBuffer(musicFilePath);
     this.source.connect(this.context.destination);
     this.source.start(0);
   }

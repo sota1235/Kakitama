@@ -14,9 +14,9 @@ const MusicItem = ({ songName, albumName, artistName, onClick }) => (
 );
 
 MusicItem.propTypes = {
-  songName: PropTypes.string,
-  albumName: PropTypes.string,
-  artistName: PropTypes.string,
+  songName   : PropTypes.string,
+  albumName  : PropTypes.string,
+  artistName : PropTypes.string,
 };
 
 export default MusicItem;
