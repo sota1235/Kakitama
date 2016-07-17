@@ -16,7 +16,7 @@ export default class AudioPlayer {
     // get native audio instance
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     this.context = new AudioContext;
-    this.source  = null;
+    this.source = null;
   }
 
   /**
@@ -77,6 +77,7 @@ export default class AudioPlayer {
    * @param {number} range
    */
   volume(range) {
-    //
+    // TODO
+    console.log(range);
   }
 }

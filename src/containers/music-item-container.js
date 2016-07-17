@@ -6,7 +6,7 @@ import { connect }         from 'react-redux';
 import { enableMusicItem } from '../actions/actions';
 import MusicItem           from '../components/music-item-component';
 
-const mapStateToProps = (state, ownProps) => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onClick: () => {
