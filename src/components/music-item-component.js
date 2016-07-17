@@ -17,6 +17,7 @@ MusicItem.propTypes = {
   songName   : PropTypes.string,
   albumName  : PropTypes.string,
   artistName : PropTypes.string,
+  onClick    : PropTypes.func,
 };
 
 export default MusicItem;
