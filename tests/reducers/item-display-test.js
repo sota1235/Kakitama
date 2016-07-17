@@ -10,7 +10,7 @@ describe('reducers/item-display.js test', () => {
   it('Should return default state.', () => {
     const expected = [];
 
-    assert.equal(expected, reducer(expected, {}));
+    assert.deepEqual(expected, reducer(undefined, {}));
   });
 
   it('Should handle CLICK_MUSIC_ITEM', () => {
