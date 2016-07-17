@@ -36,11 +36,12 @@ export function uploadMusics(files) {
 /**
  * @description Dispatch change display action of music item.
  * @param {string} id
+ * @param {string} songName
  * @return {Object}
  */
-export function enableMusicItem(id) {
+export function enableMusicItem(id, songName) {
   return {
     type: ActionNames.CLICK_MUSIC_ITEM,
-    id,
+    id, songName,
   };
 }

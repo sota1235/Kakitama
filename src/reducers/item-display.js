@@ -15,6 +15,7 @@ const musicItemDisplay = (state = [], action) => {
     case ActionNames.CLICK_MUSIC_ITEM:
       return {
         id: action.id,
+        songName: action.songName
       };
     default:
       return state;

@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => ({});
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(enableMusicItem(ownProps.id));
+      dispatch(enableMusicItem(ownProps.id, ownProps.songName));
     }
   };
 };
