@@ -12,6 +12,14 @@
       }
     ],
     "no-console": ["off"],
+    "key-spacing": ["error", {
+        "align": {
+          "beforeColon": true,
+          "afterColon": true,
+          "on": "colon"
+        }
+      }
+    ],
     "react/jsx-boolean-value": ["off"]
   }
 }
