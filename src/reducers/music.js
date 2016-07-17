@@ -11,11 +11,11 @@ import * as ActionNames from '../actions/action-types';
  * @return {Object} state
  */
 const music = (state, action) => ({
-    id: action.id,
-    songName: action.songName,
-    albumName: action.albumName,
-    artistName: action.artistName,
-    filePath: action.filePath,
+  id: action.id,
+  songName: action.songName,
+  albumName: action.albumName,
+  artistName: action.artistName,
+  filePath: action.filePath,
 });
 
 /**
