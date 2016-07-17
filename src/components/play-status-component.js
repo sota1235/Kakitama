@@ -8,7 +8,7 @@ import { ListItem, Avatar, FontIcon } from 'material-ui';
 const PlayStatus = ({ songName }) => (
   <div>
     <ListItem
-      disable={true}
+      disabled={true}
       leftAvatar={
         <Avatar icon={<FontIcon className="material-icons">headset</FontIcon>} />
       }

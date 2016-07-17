@@ -8,7 +8,7 @@ import PlayStatus from '../containers/play-status-container';
 
 const CommonToolbar = () => (
   <Toolbar>
-    <ToolbarGroup float="left">
+    <ToolbarGroup firstChild={true}>
       <FontIcon className="material-icons">fast_rewind</FontIcon>
       <FontIcon className="material-icons">play_arrow</FontIcon>
       <FontIcon className="material-icons">fast_forward</FontIcon>
