@@ -20,6 +20,7 @@
         }
       }
     ],
-    "react/jsx-boolean-value": ["off"]
+    "react/jsx-boolean-value": ["off"],
+    "react/prop-types": ["warn"]
   }
 }
