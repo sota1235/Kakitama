@@ -20,7 +20,7 @@ const PlayStatus = ({ songName }) => (
 );
 
 PlayStatus.propTypes = {
-  songName : PropTypes.string,
+  songName: PropTypes.string,
 };
 
 export default PlayStatus;
